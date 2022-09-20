@@ -36,9 +36,10 @@
 
 /* ОБЩИЕ СТИЛИ */
 .title {
+    font-family: "Marr Sans Condensed";
     font-size: 22px;
-    font-weight: 700;
-    line-height: 28px;
+    font-weight: 600;
+    line-height: 26px;
     margin: 0;
     margin-bottom: 24px;
 }
@@ -52,10 +53,16 @@
     margin-bottom: 20px;
 }
 
+.text:last-child {
+    margin-bottom: 0;
+}
+
 /* ФОТО */
 .full-img {
+    display: block;
     width: 100%;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 
@@ -122,7 +129,13 @@
 
 /* МЕЙН ОФФЕР */
 .main-offer {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 32px 16px;
+    padding-bottom: 12px;
 }
 
 .main-offer__group {
@@ -148,7 +161,17 @@
 }
 
 .main-offer__social-wrapper {
+    position: relative;
     width: 100%;
+}
+
+.main-offer__social-wrapper::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: #bdc1c8;
+    top: 100%;
 }
 
 .main-offer__social-list {
@@ -156,6 +179,8 @@
     padding: 0;
     list-style-type: none;
     display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .main-offer__social-item {
@@ -185,20 +210,92 @@
 .main-offer__social-link--e-mail {
     background-image: url('/img/ sources/icons/e-mail.svg');
     background-size: 24px;
-
 }
-
 
 .main-offer__social-link--whatsUp {
     background-image: url('/img/ sources/icons/whatsUp.svg');
     background-size: 24px;
-
 }
-
 
 .main-offer__social-link--arrow {
     background-image: url('/img/ sources/icons/arrow.svg');
     background-size: 18px;
+}
+
+
+/* ВТОРОЙ ОФФЕР */
+.second-offer {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px 16px;
+}
+
+.second-offer__text {
+    font-weight: 500;
+}
+
+
+/* ОТЗЫВ */
+.review {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px 16px;
+}
+
+
+/* ПОКУПКА */
+.purchase {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px 16px;
+}
+
+.purchase__content-text {
+    margin-bottom: 20px;
+}
+
+.purchase__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    letter-spacing: 0.2px;
+}
+
+.purchase__item {
+    margin-bottom: 20px;
+}
+
+.purchase__item:last-child {
+    margin-bottom: 0;
+}
+
+.purchase__title {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.purchase__text {
+    margin: 0;
+}
+
+
+/* ПОДАРОК */
+.gift-card {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px 16px;
 }
 
 
