@@ -12,6 +12,17 @@
     src: url("/fonts/TheAntiquaB-LeMonde.woff2") format("woff2");
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .page__body {
     font-family: "The Antiqua B";
     margin: 0;
@@ -146,6 +157,50 @@
     list-style-type: none;
     display: flex;
 }
+
+.main-offer__social-item {
+    margin-right: 12px;
+}
+
+.main-offer__social-link {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #bdc1c8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px;
+}
+
+.main-offer__social-link--bookmarks {
+    background-image: url('/img/ sources/icons/bookmarks.svg');
+}
+
+.main-offer__social-link--facebook {
+    background-image: url('/img/ sources/icons/facebook.svg');
+    background-size: 24px;
+}
+
+.main-offer__social-link--e-mail {
+    background-image: url('/img/ sources/icons/e-mail.svg');
+    background-size: 24px;
+
+}
+
+
+.main-offer__social-link--whatsUp {
+    background-image: url('/img/ sources/icons/whatsUp.svg');
+    background-size: 24px;
+
+}
+
+
+.main-offer__social-link--arrow {
+    background-image: url('/img/ sources/icons/arrow.svg');
+    background-size: 18px;
+}
+
 
 
 /* ФУТЕР */
