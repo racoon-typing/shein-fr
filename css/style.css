@@ -4,6 +4,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    color: #383f4e;
+    font-size: 16px;
 }
 
 /* ОБЩИЕ СТИЛИ */
@@ -26,15 +29,89 @@
 }
 
 
+/* ХЕДЕР  */
+.main-header__wrapper {
+    min-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eff0f3;
+}
+
+.main-header__column-wrapper--left {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.main-header__link {
+    display: flex;
+    align-items: center;
+}
+
+.main-header__link-logo {
+
+    margin-right: 16px;
+}
+
+.main-header__column-wrapper--right {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.main-header__login-link {
+    margin-right: 15px;
+    padding-right: 5px;
+    border-right: 1px solid #e2e4e9;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__subscribe {
+    width: 61px;
+    height: 16.5px;
+    font-size: 13px;
+    background-color: #ffc700;
+    border: 1px solid #ffc700;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
 /* МЕЙН */
 .main-container {
     flex-grow: 1;
+}
+
+.main-offer {
+    padding: 32px 16px;
+}
+
+.main-offer__group {
+    margin: 0;
+    color: #383f4e;
+    text-transform: uppercase;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
 .main-container__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 32px;
+    margin: 0;
+    font-family: "The Antiqua B",Georgia,Droid-serif,serif;
+    color: #2a303b;
 }
 
 
