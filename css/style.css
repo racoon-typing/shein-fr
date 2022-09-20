@@ -1,0 +1,30 @@
+.page__body {
+    font-family: "The Antiqua B",Georgia,Droid-serif,serif;
+    margin: 0;
+}
+
+/* ОБЩИЕ СТИЛИ */
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/* ФОТО */
+.full-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.main-container__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+}
