@@ -360,8 +360,29 @@
    text-align: end; 
 }
 
+
 /* ФУТЕР */
 .main-footer {
     flex-shrink: 0;
+    color: #e8eaee;
+    background-color: #2a303b;
+}
+
+.main-footer__links-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #e8eaee;
+    border-bottom: 1px solid #e8eaee;
+}
+
+.main-footer__links-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.main-footer__social-list {
+    margin: 0;
+    padding: 0;
 }
 
