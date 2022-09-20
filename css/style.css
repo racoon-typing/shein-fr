@@ -1,6 +1,9 @@
 .page__body {
     font-family: "The Antiqua B",Georgia,Droid-serif,serif;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ОБЩИЕ СТИЛИ */
@@ -23,8 +26,22 @@
 }
 
 
+/* МЕЙН */
+.main-container {
+    flex-grow: 1;
+}
+
 .main-container__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 32px;
 }
+
+
+
+
+/* ФУТЕР */
+.main-footer {
+    flex-shrink: 0;
+}
+
