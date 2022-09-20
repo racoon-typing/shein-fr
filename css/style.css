@@ -211,26 +211,26 @@
 }
 
 .main-offer__social-link--bookmarks {
-    background-image: url('/img/ sources/icons/bookmarks.svg');
+    background-image: url("../img/icons/bookmarks.svg");
 }
 
 .main-offer__social-link--facebook {
-    background-image: url('/img/ sources/icons/facebook.svg');
+    background-image: url('../img/icons/facebook.svg');
     background-size: 24px;
 }
 
 .main-offer__social-link--e-mail {
-    background-image: url('/img/ sources/icons/e-mail.svg');
+    background-image: url('../img/icons/e-mail.svg');
     background-size: 24px;
 }
 
 .main-offer__social-link--whatsUp {
-    background-image: url('/img/ sources/icons/whatsUp.svg');
+    background-image: url('../img/icons/whatsUp.svg');
     background-size: 24px;
 }
 
 .main-offer__social-link--arrow {
-    background-image: url('/img/ sources/icons/arrow.svg');
+    background-image: url('../img/icons/arrow.svg');
     background-size: 18px;
 }
 
@@ -265,6 +265,8 @@
 }
 
 .purchase__title {
+    font-size: 18px;
+    line-height: 24px;
     margin: 0;
     margin-bottom: 10px;
 }
