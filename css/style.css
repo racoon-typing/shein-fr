@@ -1,11 +1,25 @@
+/* Шрифты */
+/* "Helvetica Neue" */
+/* "The Antiqua B" */
+
+@font-face {
+    font-family: "Marr Sans Condensed";
+    src: url("/fonts/MarrSansCondensed-Medium-Web.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "The Antiqua B";
+    src: url("/fonts/TheAntiquaB-LeMonde.woff2") format("woff2");
+}
+
 .page__body {
-    font-family: "The Antiqua B",Georgia,Droid-serif,serif;
+    font-family: "The Antiqua B";
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: #383f4e;
+    color: #2a303b;
     font-size: 16px;
 }
 
@@ -14,12 +28,17 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
+    margin: 0;
+    margin-bottom: 24px;
 }
 
 .text {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 /* ФОТО */
@@ -55,7 +74,6 @@
 }
 
 .main-header__link-logo {
-
     margin-right: 16px;
 }
 
@@ -90,19 +108,22 @@
     flex-grow: 1;
 }
 
+
+/* МЕЙН ОФФЕР */
 .main-offer {
     padding: 32px 16px;
 }
 
 .main-offer__group {
     margin: 0;
-    color: #383f4e;
+    color: #717b8e;
     text-transform: uppercase;
     line-height: 25px;
     font-weight: 400;
-    font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif;
+    font-family: "Marr Sans Condensed";
     font-size: 16px;
     margin-bottom: 16px;
+    letter-spacing: 1px;
 }
 
 .main-container__title {
@@ -110,11 +131,21 @@
     font-weight: 700;
     line-height: 32px;
     margin: 0;
+    margin-bottom: 12px;
     font-family: "The Antiqua B",Georgia,Droid-serif,serif;
     color: #2a303b;
 }
 
+.main-offer__social-wrapper {
+    width: 100%;
+}
 
+.main-offer__social-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
 
 
 /* ФУТЕР */
