@@ -381,8 +381,27 @@
     padding-left: 20px;
 }
 
+.main-footer__link {
+    font-size: 13px;
+}
+
+
+/* СОЦ СЕТИ */
 .main-footer__social-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
+.main-footer__social-item {
+    margin-bottom: 10px;
+}
+
+.main-footer__social-item--header {
+    margin-bottom: 20px;
+}
+
+
+.main-footer__social {
+    font-size: 13px;
+}
