@@ -402,6 +402,7 @@
     padding-left: 35px;
     padding-top: 7px;
     padding-bottom: 7px;
+    margin-bottom: 2px;
 }
 
 .main-footer__social-item::before {
@@ -415,8 +416,8 @@
 }
 
 .main-footer__social-item--header {
-    margin-bottom: 20px;
-    padding-left: 0;
+    margin-bottom: 15px;
+    padding: 0;
 }
 
 .main-footer__social-item--facebook::before {
