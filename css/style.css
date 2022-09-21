@@ -306,13 +306,6 @@
 }
 
 
-/* ПОДАРОК */
-
-
-
-/* ПОДАРОК */
-
-
 /* УСЛОВИЯ */
 .terms__list {
     margin: 0;
@@ -332,6 +325,24 @@
 .terms__item:last-child {
     margin-bottom: 0;
 }
+
+.terms__link-wrapper {
+    display: flex;
+}
+
+.terms__link-text {
+    margin: 0;
+    margin-right: 10px;
+    font-family: "Marr Sans Condensed";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.terms__link {
+    color: #026BBA;
+}
+
 
 /* КОММЕНТАРИЙ */
 .comment__list {
