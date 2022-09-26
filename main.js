@@ -46,7 +46,6 @@ function updateClock() {
     diff = diff-(m*60);
     // var s = diff;
     
-
     let timing = `${h}h${m}`;
     timeNode.textContent = timing;
 }
