@@ -66,41 +66,41 @@ function getDataForTimeElapsed(minut, hours, day, month, year) {
     // Месяц текстом
     let monthText;
 
-    switch (month + 1) {
-        case 1:
+    switch (month) {
+        case 0:
             monthText = 'Janvier';
             break;
-        case 2:
+        case 1:
             monthText = 'Février';
             break;
-        case 3:
+        case 2:
             monthText = 'Mars';
             break;
-        case 4:
+        case 3:
             monthText = 'Avril';
             break;
-        case 5:
+        case 4:
             monthText = 'Peut';
             break;
-        case 6:
+        case 5:
             monthText = 'Juin';
             break;
-        case 7:
+        case 6:
             monthText = 'Juillet';
             break;
-        case 8:
+        case 7:
             monthText = 'Août';
             break;
-        case 9:
+        case 8:
             monthText = 'Septembre';
             break;
-        case 10:
+        case 9:
             monthText = 'Octobre';
             break;
-        case 11:
+        case 10:
             monthText = 'Novembre';
             break;
-        case 12:
+        case 11:
             monthText = 'Décembre';
             break;
         default:
@@ -111,8 +111,6 @@ function getDataForTimeElapsed(minut, hours, day, month, year) {
 }
 
 getDataForTimeElapsed(dataToday.minut, dataToday.hours, dataToday.day, dataToday.month, dataToday.year);
-
-
 
 
 // Время с момента опубликования
