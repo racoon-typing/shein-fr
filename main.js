@@ -3,6 +3,8 @@ let dataToday;
 // Получаем объект дата
 function getObjectOfData() {
     dataToday = {
+        minut: '',
+        hours: '',
         day: '',
         month: '',
         year: ''
@@ -11,6 +13,10 @@ function getObjectOfData() {
     // ДАТА
     let date = new Date;
 
+    // Минуты
+    dataToday.minut = date.getMinutes();
+    // Часы
+    dataToday.hours = date.getHours();
     // День
     dataToday.day = date.getDate();
     // Месяц
@@ -40,6 +46,75 @@ function getData(day, month, year) {
 }
 
 getData(dataToday.day, dataToday.month, dataToday.year);
+
+
+
+// Вывод даты на 2 часа меньше страницу
+function getDataForTimeElapsed(minut, hours, day, month, year) {
+    let dayNode = document.querySelector('.day');
+    let monthNode = document.querySelector('.month');
+    let yearNode = document.querySelector('.year');
+    let hourNode = document.querySelector('.hour');
+    let minutNode = document.querySelector('.minut');
+
+    // Вывод на страницу
+    dayNode.textContent = day;
+    yearNode.textContent = year;
+    hourNode.textContent = hours;
+    minutNode.textContent = minut;
+
+    // Месяц текстом
+    let monthText;
+
+    switch (month) {
+        case 1:
+            monthText = 'Janvier';
+            break;
+        case 2:
+            monthText = 'Février';
+            break;
+        case 3:
+            monthText = 'Mars';
+            break;
+        case 4:
+            monthText = 'Avril';
+            break;
+        case 5:
+            monthText = 'Peut';
+            break;
+        case 6:
+            monthText = 'Juin';
+            break;
+        case 7:
+            monthText = 'Juillet';
+            break;
+        case 8:
+            monthText = 'Août';
+            break;
+        case 9:
+            monthText = 'Septembre';
+            break;
+        case 10:
+            monthText = 'Octobre';
+            break;
+        case 11:
+            monthText = 'Novembre';
+            break;
+        default:
+            monthText = 'Décembre';
+      }
+
+    monthNode.textContent = monthText;
+
+
+
+
+}
+
+getDataForTimeElapsed(dataToday.minut, dataToday.hours, dataToday.day, dataToday.month, dataToday.year);
+
+
+
 
 // Время с момента опубликования
 let timeNode = document.querySelector(".time-elapsed");
