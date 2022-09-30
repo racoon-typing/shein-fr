@@ -1,15 +1,30 @@
-function getData() {
+let dataToday;
+
+// Получаем объект дата
+function getObjectOfData() {
+    dataToday = {
+        day: '',
+        month: '',
+        year: ''
+    };
+
     // ДАТА
     let date = new Date;
 
     // День
-    let day = date.getDate();
+    dataToday.day = date.getDate();
     // Месяц
-    let month = date.getMonth();
+    dataToday.month = date.getMonth();
     // Год
-    let year = date.getFullYear();
+    dataToday.year = date.getFullYear();
+}
 
-    // Сегодняшняя Дата
+getObjectOfData();
+
+
+// Вывод сегодняшней даты на страницу
+function getData(day, month, year) {
+    // Сегодняшняя Дата-Noda
     let dataNode = document.querySelector('.data');
 
     // Проверка
@@ -24,22 +39,24 @@ function getData() {
     }
 }
 
-getData();
+getData(dataToday.day, dataToday.month, dataToday.year);
 
 // Время с момента опубликования
 let timeNode = document.querySelector(".time-elapsed");
 
+// let date = new Date;
+
 var startDateTime = new Date(2022, 8, 21, 14, 0, 0, 0); // YYYY (M-1) D H m s ms (start time and date from DB)
 var startStamp = startDateTime.getTime();
 
-var newDate = new Date();
-var newStamp = newDate.getTime();
+// var newDate = new Date();
+// var newStamp = newDate.getTime();
 
 var timer; // for storing the interval (to stop or pause later if needed)
 
 function updateClock() {
-    newDate = new Date();
-    newStamp = newDate.getTime();
+    let newDate = new Date();
+    let newStamp = newDate.getTime();
     var diff = Math.round((newStamp - startStamp) / 1000);
 
     var d = Math.floor(diff / (24 * 60 * 60)); /* though I hope she won't be working for consecutive days :) */
