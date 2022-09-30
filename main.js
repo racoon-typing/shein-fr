@@ -60,7 +60,7 @@ function getDataForTimeElapsed(minut, hours, day, month, year) {
     // Вывод на страницу
     dayNode.textContent = day;
     yearNode.textContent = year;
-    hourNode.textContent = hours - 2;
+    hourNode.textContent = hours;
     minutNode.textContent = '00';
 
     // Месяц текстом
@@ -116,13 +116,8 @@ getDataForTimeElapsed(dataToday.minut, dataToday.hours, dataToday.day, dataToday
 // Время с момента опубликования
 let timeNode = document.querySelector(".time-elapsed");
 
-// let date = new Date;
-
-var startDateTime = new Date(2022, 8, 21, 14, 0, 0, 0); // YYYY (M-1) D H m s ms (start time and date from DB)
+var startDateTime = new Date(`${dataToday.year}`, `${dataToday.month}`, `${dataToday.day}`, `${dataToday.hours - 2}`, 0, 0, 0); // YYYY (M-1) D H m s ms (start time and date from DB)
 var startStamp = startDateTime.getTime();
-
-// var newDate = new Date();
-// var newStamp = newDate.getTime();
 
 var timer; // for storing the interval (to stop or pause later if needed)
 
