@@ -36,7 +36,7 @@ function getData(day, month, year) {
     // Проверка
     if (month < 10) {
         // Вывод на страницу
-        let today = `${day}/0${month}/${year}`;
+        let today = `${day}/0${month + 1}/${year}`;
         dataNode.textContent = today;
     } else {
         // Вывод на страницу
@@ -48,7 +48,6 @@ function getData(day, month, year) {
 getData(dataToday.day, dataToday.month, dataToday.year);
 
 
-
 // Вывод даты на 2 часа меньше страницу
 function getDataForTimeElapsed(minut, hours, day, month, year) {
     let dayNode = document.querySelector('.day');
@@ -57,16 +56,17 @@ function getDataForTimeElapsed(minut, hours, day, month, year) {
     let hourNode = document.querySelector('.hour');
     let minutNode = document.querySelector('.minut');
 
+
     // Вывод на страницу
     dayNode.textContent = day;
     yearNode.textContent = year;
-    hourNode.textContent = hours;
-    minutNode.textContent = minut;
+    hourNode.textContent = hours - 2;
+    minutNode.textContent = '00';
 
     // Месяц текстом
     let monthText;
 
-    switch (month) {
+    switch (month + 1) {
         case 1:
             monthText = 'Janvier';
             break;
@@ -100,15 +100,14 @@ function getDataForTimeElapsed(minut, hours, day, month, year) {
         case 11:
             monthText = 'Novembre';
             break;
-        default:
+        case 12:
             monthText = 'Décembre';
-      }
+            break;
+        default:
+            monthText = 'Erreur';
+    }
 
     monthNode.textContent = monthText;
-
-
-
-
 }
 
 getDataForTimeElapsed(dataToday.minut, dataToday.hours, dataToday.day, dataToday.month, dataToday.year);
