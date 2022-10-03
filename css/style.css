@@ -137,6 +137,11 @@
     border-right: 1px solid #e2e4e9;
     display: flex;
     align-items: center;
+    border: none;
+}
+
+.main-header__login-link:disabled {
+    background-color: white;
 }
 
 .main-header__subscribe {
@@ -148,6 +153,7 @@
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .main-header__subscribe:hover {
