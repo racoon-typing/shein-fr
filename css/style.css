@@ -254,6 +254,10 @@
     background-size: 13px;
 }
 
+.main-offer__social-link:disabled {
+    background-color: white;
+}
+
 .main-offer__social-link--bookmarks {
     background-image: url("../img/icons/bookmarks.svg");
 }
