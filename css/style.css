@@ -1,6 +1,6 @@
 /* Шрифты */
 /* "Helvetica Neue" */
-/* "The Antiqua B" */
+/* "Antiqua" */
 
 @font-face {
     font-family: "Antiqua";
@@ -11,22 +11,13 @@
 }
 
 @font-face {
-    font-family: "Antiqua";
-    src: url("/fonts/antiqua.woff2") format("woff2");
+    font-family: "Open Sans Condensed";
+    src: url("/fonts/OpenSans_Condensed-Regular.ttf") format("ttf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Marr Sans Condensed";
-    src: url("/fonts/MarrSansCondensed-Medium-Web.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "The Antiqua B";
-    src: url("/fonts/TheAntiquaB-LeMonde.woff2") format("woff2");
-}
 
 .visually-hidden {
     position: absolute;
@@ -52,7 +43,7 @@
 
 /* ОБЩИЕ СТИЛИ */
 .title {
-    font-family: "Marr Sans Condensed";
+    font-family: "Open Sans Condensed";
     font-size: 22px;
     font-weight: 600;
     line-height: 26px;
@@ -70,7 +61,7 @@
 }
 
 .second-text {
-    font-family: "Marr Sans Condensed";
+    font-family: "Open Sans Condensed";
 }
 
 .text--red {
@@ -181,7 +172,7 @@
     text-transform: uppercase;
     line-height: 25px;
     font-weight: 400;
-    font-family: "Marr Sans Condensed";
+    font-family: "Open Sans Condensed";
     font-size: 16px;
     margin-bottom: 13px;
     letter-spacing: 1px;
@@ -193,7 +184,7 @@
     line-height: 32px;
     margin: 0;
     margin-bottom: 12px;
-    font-family: "The Antiqua B",Georgia,Droid-serif,serif;
+    font-family: "Antiqua",Georgia,Droid-serif,serif;
     color: #2a303b;
 }
 
@@ -442,7 +433,7 @@
 }
 
 .comment__item-name--question {
-    font-family: "Marr Sans Condensed";
+    font-family: "Open Sans Condensed";
     font-size: 13px;
 }
 
